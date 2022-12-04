@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="file.css" rel="stylesheet" type="text/css"/>
+    <title>Formularz</title>
+</head>
+<body>
+ <form>
+    <div class="form">
+		<div class="title-div">
+			<h1>Formularz</h1>
+			<p>Proszę wypełnić formularz.</p>
+			<p class="required">*Wymagane</p>
+		</div>
+
+		<div class="name-div">
+			<div class="name">Podaj swoje imie i nazwisko.<span class="required">*</span></div>
+			<div class="input-div"><input type="input" name="answer" placeholder="Twoje imie i nazwisko" required></div>
+		</div>
+        
+        <div class="email-div">
+            <div class="name">Podaj swój adres e-mail.<span class="required">*</span></div>
+            <div class="input-div"><input type="email" name="answer" placeholder="Twój adres e-mail" required></div>
+        </div>
+
+		<div class="checkbox-div">
+			<div class="name2">Wybierz odpowiednie opcje.<span class="required">*</span></div>
+            <div class="checkbox">
+
+                <label class="form-control"><input type="checkbox" name="opcja" value="1">Jebać</label>
+                <label class="form-control"><input type="checkbox" name="opcja" value="2">Kurwy</label>
+                <label class="form-control"><input type="checkbox" name="opcja" value="3">Lorem</label>
+                <label class="form-control"><input type="checkbox" name="opcja" value="4">Ipsum</label>
+
+            </div>
+
+            
+		</div>
+
+
+		<div class="mobile-div">
+			<div class="name">Dawaj numer komury chuju.</div>
+			<div class="input-div"><input type="number" name="answer" placeholder="Twój numer telefonu" pattern="[0-9]{9}"></div>
+		</div>
+
+        <div class="textarea-div">
+            <label for="Opinia"><div class="name2">Przekaż nam swoją opinie.</div></label>
+            <textarea placeholder="Napisz tutaj swoją opinie" contenteditable class="Opinia" name="Opinia"></textarea>
+           
+        </div>
+
+        <div class="dropdown-div">
+            <div class="name">Dropdown</div>
+            <div class="dropdown-menu">
+
+                    <select class="select-menu">
+                        <option style="display:none;">Wybierz</option> 
+                        <option>Lorem, ipsum dolor.</option>
+                        <option>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, corporis?</option>
+                        <option>Lorem, ipsum.</option>
+                        <option>Lorem.</option>
+                    </select>
+            </div>
+        </div>
+
+
+		<div class="submit-button">
+            <button type="submit">Wyślij</button>
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+</form>
+</body>
+</html>
