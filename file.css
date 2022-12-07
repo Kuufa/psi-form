@@ -7,7 +7,7 @@ body{
 }
 
 .form{
-	height: 1100px;
+	height: 3000px;
 	width: 600px;
 	margin: auto;
 }
@@ -18,7 +18,7 @@ color: red;
 }
 
 .title-div{
-	height: 150px;
+	height: 320px;
 	width: 600px;
 	background-color: #FDFEFE;
 	margin: 15px;
@@ -26,8 +26,9 @@ color: red;
 	border-top: 8px solid #6703c4;
 	padding: 25px;
 }
-.name-div, .email-div, .mobile-div{
-	height: 125px;
+
+.name-div, .email-div, .postal-div{
+	height: 130px;
 	width: 650px;
 	background-color: #FDFEFE;
 	margin: 15px;
@@ -42,7 +43,7 @@ color: red;
 	border-radius: 8px;
 }
 
-.checkbox-div {
+.radio-div {
     height: 250px;
 	width: 650px;
 	background-color: #FDFEFE;
@@ -77,6 +78,7 @@ textarea {
 .dropdown-menu {
 	position: relative;
 	margin-left: 2rem;
+	margin-top: 1.25rem;
 
 }
 
@@ -108,7 +110,7 @@ gap: 1rem;
 margin-top: .7rem;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
 appearance: none;
 background-color: #ffff;
 margin: 0.3rem;
@@ -123,14 +125,14 @@ display: grid;
 place-content: center;
 }
 
-input[type="checkbox"]::before {
+input[type="radio"]::before {
 content: "";
 width: 0.65rem;
 height: 0.65rem;
 transform: scale(0);
 box-shadow: inset 1rem 1rem #6703c4;
 } 
-input[type="checkbox"]:checked::before {
+input[type="radio"]:checked::before {
 transform: scale(1);
 }
 

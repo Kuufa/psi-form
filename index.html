@@ -12,66 +12,304 @@
  <form>
     <div class="form">
 		<div class="title-div">
-			<h1>Formularz</h1>
-			<p>Proszę wypełnić formularz.</p>
-			<p class="required">*Wymagane</p>
+			<h1>Ocena potrzeb mieszkańców w zakresie zdrowia psychicznego</h1>
+            <h3>Szanowni Państwo!</h3>
+			<p>Uprzejmie prosimy o wypełnienie anonimowej ankiety mającej na celu poznanie Państwa potrzeb w zakresie zdrowia psychicznego. Zebrane informacje pozwolą nam podjąć konkretne działania w kierunku poprawy jakości opieki psychologicznej i psychiatrycznej.</p>
+			<p class="required">* Wymagane</p>
 		</div>
 
-		<div class="name-div">
-			<div class="name">Podaj swoje imie i nazwisko.<span class="required">*</span></div>
-			<div class="input-div"><input type="input" name="answer" placeholder="Twoje imie i nazwisko" required></div>
+		<div class="dropdown-div">
+			<div class="name">1. Pleć.<span class="required"> *</span></div>
+			<div class="dropdown-menu">
+                <select class="select-menu" required>
+                    <option style="display:none;">Wybierz</option> 
+                    <option>kobieta</option>
+                    <option>mężczyzna</option>
+                    <option>niebinarna</option>
+                    <option>inna</option>
+                </select>
+            </div>
 		</div>
-        
-        <div class="email-div">
-            <div class="name">Podaj swój adres e-mail.<span class="required">*</span></div>
-            <div class="input-div"><input type="email" name="answer" placeholder="Twój adres e-mail" required></div>
+
+        <div class="radio-div">
+            <div class="name2">2. Wiek.<span class="required">*</span></div>
+            <div class="radio">
+                <label class="form-control"><input type="radio" name="opcja1" required>poniżej 25</label>
+                <label class="form-control"><input type="radio" name="opcja1" required>25-44</label>
+                <label class="form-control"><input type="radio" name="opcja1" required>45-64</label>
+                <label class="form-control"><input type="radio" name="opcja1" required>powyżej 65</label>
+            </div>
         </div>
 
-		<div class="checkbox-div">
-			<div class="name2">Wybierz odpowiednie opcje.<span class="required">*</span></div>
-            <div class="checkbox">
+        <div class="postal-div">
+            <div class="name">3. Kod pocztowy.<span class="required">*</span></div>
+            <div class="input-div"><input type="number" name="answer" placeholder="Kod pocztowy" pattern="[0-9]{2}-[0-9]{3}" required></div>
+        </div>
 
-                <label class="form-control"><input type="checkbox" name="opcja" value="1">Jebać</label>
-                <label class="form-control"><input type="checkbox" name="opcja" value="2">Kurwy</label>
-                <label class="form-control"><input type="checkbox" name="opcja" value="3">Lorem</label>
-                <label class="form-control"><input type="checkbox" name="opcja" value="4">Ipsum</label>
+
+        <div class="dropdown-div">
+            <div class="name">4. Powiat.<span class="required">*</span></div>
+            <div class="dropdown-menu">
+                <select class="select-menu" required>
+                    <option style="display:none;">Wybierz</option> 
+                    <option value="Powiat Bełchatowski">Powiat Bełchatowski</option>
+                    <option value="Powiat Brzeziński">Powiat Brzeziński</option>
+                    <option value="Powiat Kutnowski">Powiat Kutnowski</option>
+                    <option value="Powiat Łaski">Powiat Łaski</option>
+                    <option value="Powiat Łęczycki">Powiat Łęczycki</option>
+                    <option value="Powiat Łowicki">Powiat Łowicki</option>
+                    <option value="Powiat Łódzki Wschodni">Powiat Łódzki Wschodni</option>
+                    <option value="Powiat Opoczyński">Powiat Opoczyński</option>
+                    <option value="Powiat Pabianicki">Powiat Pabianicki</option>
+                    <option value="Powiat Pajęczański">Powiat Pajęczański</option>
+                    <option value="Powiat Piotrkowski">Powiat Piotrkowski</option>
+                    <option value="Powiat Poddębicki">Powiat Poddębicki</option>
+                    <option value="Powiat Radomszczański">Powiat Radomszczański</option>
+                    <option value="Powiat Rawski">Powiat Rawski</option>
+                    <option value="Powiat Sieradzki">Powiat Sieradzki</option>
+                    <option value="Powiat Skierniewicki">Powiat Skierniewicki</option>
+                    <option value="Powiat Tomaszowski">Powiat Tomaszowski</option>
+                    <option value="Powiat Wieluński">Powiat Wieluński</option>
+                    <option value="Powiat Wieruszowski">Powiat Wieruszowski</option>
+                    <option value="Powiat Zduńskowolski">Powiat Zduńskowolski</option>
+                    <option value="Powiat Zgierski">Powiat Zgierski</option>
+                    <option value="Piotrków Trybunalski">Piotrków Trybunalski</option>
+                    <option value="Łódź">Łódź</option>
+                    <option value="Skierniewice">Skierniewice</option>
+                </select>
+                </div>
+        </div>
+
+		<div class="radio-div">
+			<div class="name2">5. Wykształcenie.<span class="required">*</span></div>
+            <div class="radio">
+
+                <label class="form-control"><input required type="radio" name="opcja2">podstawowe</label>
+                <label class="form-control"><input required type="radio" name="opcja2">zawodowe</label>
+                <label class="form-control"><input required type="radio" name="opcja2">średnie</label>
+                <label class="form-control"><input required type="radio" name="opcja2">wyższe</label>
 
             </div>
 
             
 		</div>
 
+		<div class="radio-div" style="height: 280px;">
+			<div class="name2">7. Stan cywilny.<span class="required">*</span></div>
+            <div class="radio">
 
-		<div class="mobile-div">
-			<div class="name">Dawaj numer komury chuju.</div>
-			<div class="input-div"><input type="number" name="answer" placeholder="Twój numer telefonu" pattern="[0-9]{9}"></div>
-		</div>
+                <label class="form-control"><input type="radio" name="opcja3" required>stan wolny</label>
+                <label class="form-control"><input type="radio" name="opcja3" required>związek nieformalny</label>
+                <label class="form-control"><input type="radio" name="opcja3" required>związek małżeński</label>
+                <label class="form-control"><input type="radio" name="opcja3"required>rozwiedzony/rozwiedzona</label>
+                <label class="form-control"><input type="radio" name="opcja3"required>wdowiec/wdowa</label>
+                </div>
 
-        <div class="textarea-div">
-            <label for="Opinia"><div class="name2">Przekaż nam swoją opinie.</div></label>
-            <textarea placeholder="Napisz tutaj swoją opinie" contenteditable class="Opinia" name="Opinia"></textarea>
-           
-        </div>
-
-        <div class="dropdown-div">
-            <div class="name">Dropdown</div>
-            <div class="dropdown-menu">
-
-                    <select class="select-menu">
-                        <option style="display:none;">Wybierz</option> 
-                        <option>Lorem, ipsum dolor.</option>
-                        <option>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, corporis?</option>
-                        <option>Lorem, ipsum.</option>
-                        <option>Lorem.</option>
-                    </select>
             </div>
-        </div>
+
+            <div class="radio-div">
+                <div class="name2">8. Status zawodowy.<span class="required">*</span></div>
+                <div class="radio">
+    
+                    <label class="form-control"><input type="radio" name="opcja4"required>uczeń/student</label>
+                    <label class="form-control"><input type="radio" name="opcja4"required>pracujący</label>
+                    <label class="form-control"><input type="radio" name="opcja4"required>bezrobotny</label>
+                    <label class="form-control"><input type="radio" name="opcja4"required>emeryt/rencista</label>
+    
+                </div>
+                </div> 
+            
+                <div class="radio-div" style="height: 170px;">
+                    <div class="name2">9. Charakter wykonywanej pracy.<span class="required">*</span></div>
+                    <div class="radio">
+        
+                        <label class="form-control"><input type="radio" name="opcja5"required>fizyczna</label>
+                        <label class="form-control"><input type="radio" name="opcja5"required>umysłowa</label>
+        
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 280px;">
+                        <div class="name2">10. Jak ocenia Pan/Pani swoją sytuację materialną?.<span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja6"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja6"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja6"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja6"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja6"required>bardzo zła</label>
+                            </div>
+                    </div>
+
+                    <div class="radio-div" style="height: 280px;">
+                        <div class="name2">11. Jak ocenia Pan/Pani swoje ogólne zdrowie?.<span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja7"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja7"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja7"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja7"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja7"required>bardzo zła</label>
+                            </div>
+                    </div>
+
+                    <div class="radio-div" style="height: 220px;">
+                        <div class="name2">12. Czy w ciągu ostatnich 12 miesięcy będąc na kontrolnej wizycie lub w trakcie innego rodzaju wizyty lekarz spytał Pana/Panią o problemy emocjonalne/nerwowe/zdrowie psychiczne? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja8"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja8"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 280px;">
+                        <div class="name2">13. Jak ocenia Pan/Pani swoje zdrowie psychiczne?.<span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja9"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja9"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja9"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja9"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja9"required>bardzo zła</label>
+                            </div>
+                    </div>
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">14. Czy w ciągu ostatniego roku odczuwał/a Pan/Pani stan, który określiłby/określiłaby Pan/Pani jako depresyjny/lękowy? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja10"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja10"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    
+                    <div class="radio-div" style="height: 280px;">
+                        <div class="name2">15. Pana/Pani samoocena jest.<span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja11"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja11"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja11"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja11"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja11"required>bardzo zła</label>
+                            </div>
+                    </div>
+                
+                    <div class="radio-div" style="height: 300px;">
+                        <div class="name2">16. Jak ocenia Pan/Pani swoje codzienne funkcjonowanie/radzenie sobie z codziennymi problemami?<span class="required">*</span></div>
+                        <div class="radio">
+                            
+                            <label class="form-control"><input type="radio" name="opcja12"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja12"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja12"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja12"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja12"required>bardzo zła</label>
+                            </div>
+                    </div>
+            
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">17. Czy kiedykolwiek korzystał/a Pan/Pani z konsultacji psychologicznej? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja13"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja13"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">18. Czy kiedykolwiek korzystał/a Pan/Pani z konsultacji psychiatrycznej? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja14"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja14"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">19. Czy w Pana/Pani ocenie korzystanie z konsultacji w/w specjalistów jest powodem do wstydu? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja15"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja15"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">20. Czy gdyby zaistniała taka potrzeba skorzystałby/ skorzystałaby Pan/Pani z konsultacji w/w specjalistów? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja16"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja16"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">21. Czy wie Pan/Pani gdzie znajduje się najbliższa poradnia zdrowia psychicznego? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja17"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja17"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 190px;">
+                        <div class="name2">22. Czy wie Pan/Pani gdzie znajduje się najbliższy szpital psychiatryczny?  <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja18"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja18"required>nie</label>
+            
+                    </div>
+                    </div>  
+
+                    <div class="radio-div" style="height: 300px;">
+                        <div class="name2">23. Jak ocenia Pan/Pani dostępność opieki psychologicznej/psychiatrycznej w swojej gminie? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja19"required>bardzo dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja19"required>dobra</label>
+                            <label class="form-control"><input type="radio" name="opcja19"required>przeciętna</label>
+                            <label class="form-control"><input type="radio" name="opcja19"required>zła</label>
+                            <label class="form-control"><input type="radio" name="opcja19"required>bardzo zła</label>
+                            </div>
+                    </div>
 
 
-		<div class="submit-button">
-            <button type="submit">Wyślij</button>
-		</div>
+                    <div class="radio-div" style="height: 200px;">
+                        <div class="name2">24. Czy wziąłby/wzięłaby Pan/Pani udział w konferencji/warsztatach mających na celu podniesienie świadomości na temat zaburzeń psychicznych i możliwości ich leczenia? <span class="required">*</span></div>
+                        <div class="radio">
+            
+                            <label class="form-control"><input type="radio" name="opcja20"required>tak</label>
+                            <label class="form-control"><input type="radio" name="opcja20"required>nie</label>
+            
+                    </div>
+                    </div>  
 
+
+                    <div class="email-div">
+                        <div class="name">25. Czy chce Pan/Pani otrzymać informacje z przeprowadzonej ankiety? Jeżeli tak proszę wpisać swój adres e-mail poniżej. </div>
+                        <div class="input-div"><input type="email" name="answer" placeholder="Twój adres e-mail"></div>
+                    </div>
+
+
+                    <div class="textarea-div">
+                        <label for="Opinia"><div class="name2">26. Przekaż nam swoją opinie.</div></label>
+                        <textarea placeholder="Napisz tutaj swoją opinie" contenteditable class="Opinia" name="Opinia"></textarea>
+                    
+                    </div>
+
+
+                    <div class="submit-button">
+                        <button type="submit">Wyślij</button>
+                    </div>
 
 
 
